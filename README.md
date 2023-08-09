@@ -1,2 +1,2 @@
-# Group-Project-2
+# Travel-Geek-2
 Group-Project-2

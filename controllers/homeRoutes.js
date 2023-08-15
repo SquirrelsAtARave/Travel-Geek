@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
 //homepage route
-route.get("/", async(req, res)=>{
+router.get("/", async(req, res)=>{
     try{
         res.render("homepage")
 
@@ -10,8 +10,8 @@ route.get("/", async(req, res)=>{
     }
 })
 
-//login route
-route.get("/login", async(req, res)=>{
+//login router
+router.get("/login", async(req, res)=>{
     try{
         res.render("login")
 
@@ -20,8 +20,8 @@ route.get("/login", async(req, res)=>{
     }
 })
 
-//profile route
-route.get("/profile", async(req, res)=>{
+//profile router
+router.get("/profile", async(req, res)=>{
     try{
         res.render("profile")
 

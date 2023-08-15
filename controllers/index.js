@@ -7,7 +7,7 @@ router.use('/', homeRoutes);
 router.use('/api', apiRoutes);
 
 module.exports = router;
-
+/* 
 document.addEventListener("DOMContentLoaded", () => {
     const appElement = document.getElementById("app");
     const loginFormTemplate = Handlebars.compile(document.getElementById("loginFormTemplate").innerHTML);
@@ -34,4 +34,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Perform sign-up logic (e.g., send data to server)
     });
-});
+});*/

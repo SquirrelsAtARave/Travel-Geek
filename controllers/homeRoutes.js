@@ -30,6 +30,26 @@ router.get("/profile", async(req, res)=>{
     }
 })
 
+//itinerary router
+router.get("/itinerary", async(req, res)=>{
+    try{
+        res.render("itinerary")
+
+    }catch(err) {
+        console.error(err)
+    }
+})
+
+//budget router
+router.get("/budget", async(req, res)=>{
+    try{
+        res.render("budget")
+
+    }catch(err) {
+        console.error(err)
+    }
+})
+
 
 module.exports = router;
 

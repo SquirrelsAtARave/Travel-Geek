@@ -35,6 +35,10 @@ User.init(
         len: [8],
       },
     },
+    budget_amount: {
+      type: DataTypes.INTEGER,
+      defaultValue: 0
+    },
   },
   {
     hooks: {

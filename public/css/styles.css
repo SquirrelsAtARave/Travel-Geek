@@ -16,7 +16,6 @@ body {
 }
 
 header {
-  background-color: #333;
   color: white;
   text-align: center;
   padding: 10px;
@@ -36,6 +35,49 @@ nav button {
 main {
   flex-grow: 1;
 }
+
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgb(195, 185, 50);
+}
+
+.card header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+.card h5 {
+  margin: 5px 10px 5px 0;
+  font-size: 1rem;
+  color: white;
+  display: inline;
+  text-align: center;
+  padding: 50px;
+}
+
 
 footer {
   background-color: #f4f4f4;

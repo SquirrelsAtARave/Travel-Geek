@@ -3,9 +3,13 @@ const router = require('express').Router();
 //homepage route
 router.get("/", async(req, res)=>{
     try{
+      if(!req.session.logged_in){
         res.render("homepage")
-
-    }catch(err) {
+        } else{
+            res.redirect("/profile")
+        }     
+    }  
+    catch(err) {
         console.error(err)
     }
 })

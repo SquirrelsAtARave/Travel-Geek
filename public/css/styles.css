@@ -1,7 +1,10 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Permanent+Marker&display=swap');
+
+  body {
   margin: 0;
   padding: 0;
-  background-image: url('/assets/background-images.png');
+  /* background-image: url('/assets/background-images.png'); */
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -15,21 +18,48 @@ body {
   flex-direction: column;
 }
 
-header {
+h1 {
+  font-size: 80px;
+  font-family: 'Oleo Script', cursive;
   color: white;
-  text-align: center;
+  margin: 0;
   padding: 10px;
 }
 
-nav {
+p {
+  font-size: 25px;
   text-align: center;
-  padding: 20px;
+  font-family: 'Permanent Marker', cursive;
+  color: rgba(255, 247, 0, 0.899);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+header {
+  color: white;
+  text-align: center;
+  padding: 70px;
+  font-size: large;
+}
+
+
+nav {
+  /* text-align: center; */
+  padding: -30px;
 }
 
 nav button {
   margin: 0 10px;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 30px;
+  background-color: rgb(142, 94, 30);
+  border-radius: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%; /* Position at the vertical center */
+  left: 50%; /* Position at the horizontal center */
+  transform: translate(-50%, -50%); /* Adjust for center alignment */
+  color: #f4f4f4;
 }
 
 main {
@@ -81,6 +111,7 @@ h3 {
 
 footer {
   background-color: #f4f4f4;
+  font-size: 20px;
   padding: 20px;
   text-align: center;
   position: relative; /* Position the footer relative to the parent */

@@ -24,6 +24,7 @@
 
 h1 {
   font-size: 80px;
+  text-align: center;
   font-family: 'Oleo Script', cursive;
   color: white;
   margin: 0;
@@ -45,6 +46,14 @@ h4 {
   margin-bottom: 20px;
 }
 
+h6 {
+  font-size: 100px;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  color: rgba(255, 247, 0, 0.899);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 70px;
+}
 
 
 header {
@@ -205,6 +214,8 @@ td {
   cursor: pointer;
   position: relative;
   top: 30px;
+  
+
   
 }
 

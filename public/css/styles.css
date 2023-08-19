@@ -61,17 +61,21 @@ nav {
 }
 
 nav button {
-  margin: 0 10px;
+  margin: auto;
   padding: 10px 20px;
-  font-size: 30px;
-  background-color: rgb(142, 94, 30);
+  font-size: 45px;
+  font-weight: bolder;
+  font-family: Oleo Script;
+  background-color: transparent;
+  border-color: transparent;
   border-radius: 15px;
   cursor: pointer;
-  position: absolute;
+  position: sticky;
   top: 65%; /* Position at the vertical center */
   left: 50%; /* Position at the horizontal center */
   transform: translate(-50%, -50%); /* Adjust for center alignment */
-  color: #f4f4f4;
+  color: #85340f;
+  
 }
 
 

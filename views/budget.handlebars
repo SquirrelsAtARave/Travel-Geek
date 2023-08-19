@@ -1,18 +1,19 @@
-<body> <nav>
-        <button id="logout" > Logout </button> 
-        <a href="/profile">Profile</a>
-        <a href="/">Home</a>
-    </nav>
+<body> 
+  <nav>
+        <button id="logout" > Logout </button>
+        <a href="/profile" class="link">Profile</a>
+        <a href="/" class="link">Home</a>
+  </nav>
     <header>
-        {{!-- <h1>My Budget</h1> --}}
-        <body style="background-image: url('/assets/Golden-Gate-Bridge.jpg'); background-size: cover;">
+        <h1>My Travel Budget</h1>
+        <body style="background-image: url('/assets/Lake-Tahoe-in-summer.png">
     </header>
     {{!-- <div class="box"> --}}
       <div>
          {{!-- <h3>Starting Budget</h3> --}}
-         <p id = "starting-budget-header" class = "starting-budget">Please Enter Your Starting Budget Here:</p>
-         <input id="budget_input" type = "number">
-         <button id="submit_budget">Submit</button>
+         <p id = "starting-budget-header" class = "starting-budget">Please, enter your starting budget here: <input id="budget_input" type = "number">
+         <button id="submit_budget">Submit</button></p>
+         
       </div>
       
        <div class="box">
@@ -48,16 +49,18 @@
   </tr>
 </table>
 
-    <footer>
+     <footer>
         <div>
-            <span>Links to:</span>
+            
             <a href="https://www.hotels.com/">Hotel.com</a>
             <a href="https://www.expedia.com/">Expedia.com</a>
+            <a href="https://www.airbnb.com/">Airbnb</a>
         </div>
         <div>
-            <span>Travel Resources:</span>
+            
             <a href="https://www.viator.com/?pid=P00095857&mcid=42383&medium=link&campaign=a009s8y13&gclid=CjwKCAjwxOymBhAFEiwAnodBLDAUOJgmTG1Rk_sfRlmlrAzU97KfPUXr-NX95PRQB6d56TRgt98-SxoC37MQAvD_BwE">Viator</a>
-            <a href="#">Resource 2</a>
+            <a href="https://www.hertz.com/rentacar/reservation/">Hertz</a>
+            <a href="https://www.enterprise.com/en/car-rental/campaigns/rent-a-car-b.html?gclid=CjwKCAjwivemBhBhEiwAJxNWN3R8vsy1946QbZEkeNiBV7N2bijAtZZhZii0lF3zyJzfPxaK2GO2MhoCeYkQAvD_BwE&mcid=paidsearch:33337680&targetid=aud-294572907991:kwd-299987501942&ef_id=CjwKCAjwivemBhBhEiwAJxNWN3R8vsy1946QbZEkeNiBV7N2bijAtZZhZii0lF3zyJzfPxaK2GO2MhoCeYkQAvD_BwE:G:s&s_kwcid=AL!4824!3!615867649890!b!!g!!enterprise%20location%20near%20me!20420986450!150592858303&campaignid=20420986450&gclsrc=aw.ds/">Entreprise</a>
         </div>
     </footer>
     <script src="./js/budget.js"></script>

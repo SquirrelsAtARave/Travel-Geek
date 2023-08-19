@@ -25,7 +25,11 @@
   height: 30px;
   font-size: 14pt;
 }
-
+.link {
+  height: 50px;
+  font-size: 20pt;
+  color: #000000;
+}
 .button {
   height: 35px;
   font-size: 14pt;
@@ -116,11 +120,10 @@ main {
 }
 
 .starting-budget {
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
-  font-family: 'Permanent Marker', cursive;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
   margin-bottom: 100px;
 
 }

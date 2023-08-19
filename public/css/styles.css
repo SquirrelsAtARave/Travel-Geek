@@ -50,7 +50,7 @@ h4 {
 header {
   color: white;
   text-align: center;
-  padding: 70px;
+  padding: 15px;
   font-size: large;
 }
 
@@ -85,7 +85,8 @@ main {
   font-family: 'Permanent Marker', cursive;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  margin-bottom: 40px;
+  margin-bottom: 100px;
+
 }
 
 
@@ -129,6 +130,66 @@ h3 {
   text-align: center;
   padding: 50px;
 }
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: end;
+  cursor: pointer;
+  position: relative;
+ 
+}
+nav a:hover {
+  background-color: #e74c3c;
+
+}
+
+#budget_input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 150px;
+}
+#submit_budget {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0c3d5b;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+#submit_budget:hover {
+  background-color: #0c3d5b;
+}
+
+
+table {
+  border-collapse: collapse;
+  margin-left: 40px;
+  margin-right: 100px;
+}
+th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    color: black;
+    background-color: #f2f2f2;
+  }
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  color: white;
+  
+}
+
+ 
 
 #logout {
   background-color: #e74c3c;

@@ -1,15 +1,31 @@
-
+let budget = 0;
 const getBudget = async () => {
-  const response = await fetch('/api/users', {
-    method: 'GET',
-    headers: { 'Content-Type': 'application/json' },
-    
-  });
-  return response.budget_amount
-}
+  try {
+    const response = await fetch('/api/users', {
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json' },
+    });
 
-const budget = getBudget();
-console.log ("budget: ", budget);
+    if (!response.ok) {
+      throw new Error('Request failed');
+    }
+
+    const data = await response.json();
+    return data.budget_amount;
+  } catch (error) {
+    console.error('Error fetching budget:', error);
+    return null; // or some default value
+  }
+};
+
+getBudget()
+  .then(budgetData => {
+    budget = budgetData;
+    console.log('budget:', budget);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
 
 const submitBudget = async () => {
     console.log("submit budget function");
@@ -19,7 +35,8 @@ const submitBudget = async () => {
 
 
       const response = await fetch('/api/users/budget', {
-      method: 'POST',
+      method: 'PUT',
+      body: JSON.stringify({budget_amount: budget}),
       headers: { 'Content-Type': 'application/json' },
     });
   

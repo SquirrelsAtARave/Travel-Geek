@@ -54,6 +54,13 @@ router.get("/budget", async(req, res)=>{
     }
 })
 
+router.get("/addexpense", async(req, res)=>{
+    try{
+        res.render("addExpense")
+    }catch(err) {
+        console.error(err)
+    }
+})
 
 module.exports = router;
 

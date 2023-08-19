@@ -21,6 +21,32 @@
   display: flex;
   flex-direction: column;
 }
+.textBox {
+  height: 30px;
+  font-size: 14pt;
+}
+.link {
+  height: 50px;
+  font-size: 20pt;
+  color: #000000;
+}
+.button {
+  height: 35px;
+  font-size: 14pt;
+}
+.loginForm {
+
+  font-size: 35px;
+  font-family: 'Oleo Script', cursive;
+  text-align: center;
+}
+.signUpForm {
+
+  font-size: 30px;
+  font-family: 'Oleo Script', cursive;
+  text-align: center;
+}
+
 
 h1 {
   font-size: 80px;
@@ -33,8 +59,9 @@ h1 {
 
 h2 {
   font-size: 50px;
-  color: rgb(33, 66, 33);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
 h4 {
@@ -72,7 +99,7 @@ nav {
 nav button {
   margin: auto;
   padding: 10px 20px;
-  font-size: 45px;
+  font-size: 60px;
   font-weight: bolder;
   font-family: Oleo Script;
   background-color: transparent;
@@ -83,7 +110,7 @@ nav button {
   top: 65%; /* Position at the vertical center */
   left: 50%; /* Position at the horizontal center */
   transform: translate(-50%, -50%); /* Adjust for center alignment */
-  color: #85340f;
+  color: #000000;
   
 }
 
@@ -93,11 +120,10 @@ main {
 }
 
 .starting-budget {
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
-  font-family: 'Permanent Marker', cursive;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
   margin-bottom: 100px;
 
 }

@@ -31,9 +31,9 @@ h1 {
 }
 
 h2 {
-  font-size: 50px;
-  color: rgb(33, 66, 33);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  color: rgba(255, 247, 0, 0.899);
+  font-family: 'Permanent Marker', cursive;
 }
 
 h4 {
@@ -119,6 +119,36 @@ main {
   margin-bottom: 20px;
 }
 
+.box-2 {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.card-2 {
+  position: relative;
+  max-width: 200px; /* Adjust this value as needed */
+  padding: 20px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-2 button {
+  border: none;
+  background-color: rgb(195, 185, 50);
+  color: white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card-2 button:hover {
+  background-color: #45a049;
+}
+
 h3 {
   margin: 0;
   font-size: 1.5rem;
@@ -136,7 +166,7 @@ h3 {
 }
 
 nav a {
-  color: white;
+  color: black;
   text-decoration: none;
   padding: 10px 20px;
   font-size: 16px;
@@ -150,14 +180,36 @@ nav a:hover {
 
 }
 
+.budget-form {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  align-items: center;
+}
+
 #budget_input {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-right: 10px;
-  width: 150px;
+  border-radius: 5px 0 0 5px;
 }
+
+#submit_budget {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#submit_budget:hover {
+  background-color: #45a049;
+}
+
+
 #submit_budget {
   padding: 10px 20px;
   font-size: 16px;
@@ -171,12 +223,13 @@ nav a:hover {
   background-color: #0c3d5b;
 }
 
-
 table {
   border-collapse: collapse;
-  margin-left: 40px;
-  margin-right: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+ 
 }
+
 th {
     border: 1px solid #ddd;
     padding: 8px;

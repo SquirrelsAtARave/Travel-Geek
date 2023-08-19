@@ -21,6 +21,28 @@
   display: flex;
   flex-direction: column;
 }
+.textBox {
+  height: 30px;
+  font-size: 14pt;
+}
+
+.button {
+  height: 35px;
+  font-size: 14pt;
+}
+.loginForm {
+
+  font-size: 35px;
+  font-family: 'Oleo Script', cursive;
+  text-align: center;
+}
+.signUpForm {
+
+  font-size: 30px;
+  font-family: 'Oleo Script', cursive;
+  text-align: center;
+}
+
 
 h1 {
   font-size: 80px;
@@ -33,8 +55,9 @@ h1 {
 
 h2 {
   font-size: 50px;
-  color: rgb(33, 66, 33);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
 h4 {

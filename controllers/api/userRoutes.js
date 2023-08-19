@@ -12,6 +12,25 @@ router.get('/', async (req,res) =>{
   }
 })
 
+router.put('/budget', async (req,res) =>{
+  const currentUser = await User.findByPk(req.session.user_id);
+  try{
+    if (!currentUser){
+      res.status(400).json({message: "User not found"});
+    }
+    else {
+      console.log("in put route; ", req.body.budget_amount);
+      currentUser.update({budget_amount: req.body.budget_amount})
+      res.status(200).json(currentUser);
+    }
+  }
+  catch(err){
+    console.log(err);
+    res.status(500)
+  }
+ 
+})
+
 
 router.post('/', async (req, res) => {
   try {
@@ -21,6 +40,7 @@ router.post('/', async (req, res) => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
       console.log (userData.id)
+      
 
       res.status(200).json(userData);
     });
@@ -54,6 +74,7 @@ router.post('/login', async (req, res) => {
       console.log("user",userData.id);
       req.session.logged_in = true;
       console.log("session in login: ", req.session.logged_in);
+     
 
       res.json({ user: userData, message: 'You are now logged in!' });
     });

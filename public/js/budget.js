@@ -1,4 +1,5 @@
 let budget = 0;
+const budgetHeader = document.getElementById("starting-budget-header")
 const getBudget = async () => {
   try {
     const response = await fetch('/api/users', {
@@ -22,7 +23,7 @@ getBudget()
   .then(budgetData => {
     budget = budgetData;
     console.log('budget:', budget);
-  })
+    budgetHeader .textContent = `Your Starting Budget Is: $ ${budget}` })
   .catch(error => {
     console.error('Error:', error);
   });
@@ -33,7 +34,6 @@ const submitBudget = async () => {
     console.log(budget);
 
 
-
       const response = await fetch('/api/users/budget', {
       method: 'PUT',
       body: JSON.stringify({budget_amount: budget}),
@@ -41,7 +41,8 @@ const submitBudget = async () => {
     });
   
     if (response.ok) {
-      document.location.replace('/');
+      budgetHeader.textContent = `Your Starting Budget Is: $ ${budget}`
+      // document.location.replace('/');
     } else {
       alert(response.statusText);
     }

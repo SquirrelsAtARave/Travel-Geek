@@ -21,9 +21,10 @@
 
       <div id="add_expense_div">
         <h5>Add Expense</h5>
-        <label for="categoroy_dropdown">Choose a category:</label>
+      
         <form>
-        <select id="categoroy_dropdown" name="category">
+        <select id="category_dropdown" name="category">
+            <option value="">Choose a Category</option>
             <option value="Hotel">Hotel</option>
             <option value="Food">Food</option>
             <option value="Entertainment">Entertainment</option>
@@ -58,6 +59,13 @@
   {{/each}}
 
 </table>
+
+<p id="total_expenses_header">
+</p>
+
+<p id="ending_budget_header">
+</p>
+
 
      {{!-- <footer>
         <div>

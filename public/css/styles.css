@@ -27,7 +27,7 @@
 }
 .link {
   height: 50px;
-  font-size: 20pt;
+  font-size: 20px;
   color: #000000;
 }
 .button {
@@ -58,9 +58,9 @@ h1 {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 30px;
   color: white;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
 }
 
@@ -99,7 +99,7 @@ nav {
 nav button {
   margin: auto;
   padding: 10px 20px;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: bolder;
   font-family: Oleo Script;
   background-color: transparent;
@@ -110,10 +110,13 @@ nav button {
   top: 65%; /* Position at the vertical center */
   left: 50%; /* Position at the horizontal center */
   transform: translate(-50%, -50%); /* Adjust for center alignment */
-  color: #000000;
-  
+  color: #e24d07;
+  text-decoration: none;
 }
 
+nav button:hover {
+  text-decoration: none;
+}
 
 main {
   flex-grow: 1;
@@ -129,13 +132,34 @@ main {
 }
 
 
-.box {
+/* .box {
   display: flex;
   justify-content: center;
   align-items: center;
+} */
+
+.box button{
+  display: flex;
+  position: relative;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 48%;
+  margin-bottom: 20px;
+  text-decoration: none;
+  padding: 20px 20px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  background-color: rgb(195, 185, 50);
+  color: white;
+  cursor: pointer;
+  /* transition: background-color 0.3s ease-in-out; */
 }
 
-.card {
+
+/* .card {
   position: relative;
   max-width: 400px;
   padding: 20px;
@@ -152,22 +176,13 @@ main {
 
 .card {
   margin-bottom: 20px;
-}
+} */
 
 h3 {
   margin: 0;
   font-size: 1.5rem;
   text-align: center;
   color: white;
-}
-
-.card h5 {
-  margin: 5px 10px 5px 0;
-  font-size: 1rem;
-  color: white;
-  display: inline;
-  text-align: center;
-  padding: 50px;
 }
 
 nav a {
@@ -180,10 +195,10 @@ nav a {
   position: relative;
  
 }
-nav a:hover {
-  background-color: #e74c3c;
+/* nav a:hover {
+  background-color: #e74c3c; */
 
-}
+
 
 #budget_input {
   padding: 10px;
@@ -209,9 +224,10 @@ nav a:hover {
 
 table {
   border-collapse: collapse;
-  margin-left: 40px;
-  margin-right: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
+
 th {
     border: 1px solid #ddd;
     padding: 8px;

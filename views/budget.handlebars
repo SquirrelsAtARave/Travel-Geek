@@ -10,21 +10,21 @@
     </header>
     {{!-- <div class="box"> --}}
       <div>
-          <h3>Starting Budget</h3> 
+          {{!-- <h3>Starting Budget</h3>  --}}
          <p id = "starting-budget-header" class = "starting-budget">Please, enter your starting budget here: <input id="budget_input" type = "number">
          <button id="submit_budget">Submit</button></p>
          
       </div>
       
-       <div class="box">
-          <div class="card">
-            <h5>Add Expenses</h5>
-          </div>
-         <div class="card">
-           <h5>Remove Expenses</h5>
-         </div>
-        </div>
-    </div>
+     <div class="box">
+        <a href="/addExpense">
+        <button>Add Expenses</button> </a>
+     </div>
+       {{!-- <a href="/remove-expenses" class="card">
+         <h5>Remove Expenses</h5>
+       </a> --}}
+    
+      </div>
    
    <table>
   <tr>
@@ -33,23 +33,23 @@
     <th>Amount</th>
   </tr>
   <tr>
-    <td>Date 1</td>
-    <td>Category</td>
-    <td>$100</td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
-    <td>Date 2</td>
-    <td>Category</td>
-    <td>$150</td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
-    <td>Date 3</td>
-    <td>Category</td>
-    <td>$200</td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
 </table>
 
-     <footer>
+     {{!-- <footer>
         <div>
             
             <a href="https://www.hotels.com/">Hotel.com</a>
@@ -62,7 +62,7 @@
             <a href="https://www.hertz.com/rentacar/reservation/">Hertz</a>
             <a href="https://www.enterprise.com/en/car-rental/campaigns/rent-a-car-b.html?gclid=CjwKCAjwivemBhBhEiwAJxNWN3R8vsy1946QbZEkeNiBV7N2bijAtZZhZii0lF3zyJzfPxaK2GO2MhoCeYkQAvD_BwE&mcid=paidsearch:33337680&targetid=aud-294572907991:kwd-299987501942&ef_id=CjwKCAjwivemBhBhEiwAJxNWN3R8vsy1946QbZEkeNiBV7N2bijAtZZhZii0lF3zyJzfPxaK2GO2MhoCeYkQAvD_BwE:G:s&s_kwcid=AL!4824!3!615867649890!b!!g!!enterprise%20location%20near%20me!20420986450!150592858303&campaignid=20420986450&gclsrc=aw.ds/">Entreprise</a>
         </div>
-    </footer>
+    </footer> --}}
     <script src="./js/budget.js"></script>
 </body>
 </html>

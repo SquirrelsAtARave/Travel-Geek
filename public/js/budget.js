@@ -88,20 +88,35 @@ const submitExpense = async () => {
 const deleteExpense = async (event) => {
   console.log("in delete listener: ");
   if (event.target.classList.contains("remove_button")) {
+
+    const alert = await Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!'
+  });
+
+
     let id = parseInt(event.target.id);
-    console.log("in delete listener: ", id);
-    const response = await fetch("/api/expense", {
-      method: "DELETE",
-      body: JSON.stringify({
-        id: id,
-      }),
-      headers: { "Content-Type": "application/json" },
-    });
-    if (response.ok) {
-      document.location.reload();
-    } else {
-      alert(response.statusText);
+    if (alert.isConfirmed) {
+      console.log("in delete listener: ", id);
+      const response = await fetch("/api/expense", {
+        method: "DELETE",
+        body: JSON.stringify({
+          id: id,
+        }),
+        headers: { "Content-Type": "application/json" },
+      });
+      if (response.ok) {
+        document.location.reload();
+      } else {
+        alert(response.statusText);
+      }
     }
+  
   }
 };
 

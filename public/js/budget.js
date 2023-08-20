@@ -47,6 +47,55 @@ const submitBudget = async () => {
       alert(response.statusText);
     }
   };
+
+  const submitExpense = async () => {
+    let category = document.getElementById('categoroy_dropdown').value;
+    let description = document.getElementById('expense_description').value;
+    let amount = parseInt(document.getElementById('expense_amount').value);
+
+    const response = await fetch('/api/expense', {
+      method: "POST",
+      body: JSON.stringify({
+        category, 
+        description, 
+        amount
+      }),
+      headers: { "Content-Type": "application/json" }
+    
+    })
+
+    if(response.ok){
+      document.location.reload();
+    }
+    else{
+      alert (reponse.statusText);
+    }
+  }
+
+  const deleteExpense = async(event) => {
+    console.log ("in delete listener: ");
+    if (event.target.classList.contains("remove_button")){
+      let id = parseInt(event.target.id)
+      console.log ("in delete listener: ", id);
+      const response = await fetch('/api/expense', {
+        method: "DELETE",
+        body: JSON.stringify({
+        id: id
+        }),
+        headers: {"Content-Type":"application/json"}
+      })
+      if (response.ok){
+        document.location.reload();
+      }
+      else {
+        alert(response.statusText);
+      }
+
+    }
+  }
   
   document.querySelector('#submit_budget').addEventListener('click', submitBudget);
   
+  document.getElementById("submit_expense").addEventListener('click', submitExpense);
+  document.getElementById("expenses_table").addEventListener('click', deleteExpense);
+

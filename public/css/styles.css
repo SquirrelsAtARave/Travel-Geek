@@ -34,13 +34,13 @@
   height: 35px;
   font-size: 14pt;
 }
-.loginForm {
+#loginForm {
 
   font-size: 35px;
   font-family: 'Oleo Script', cursive;
   text-align: center;
 }
-.signUpForm {
+#signUpForm {
 
   font-size: 30px;
   font-family: 'Oleo Script', cursive;

@@ -1,4 +1,6 @@
 const router = require('express').Router();
+const Expense = require('../models/Expense.js');
+const withAuth = require('../utils/auth.js');
 
 //homepage route
 router.get("/", async(req, res)=>{
@@ -25,7 +27,7 @@ router.get("/login", async(req, res)=>{
 })
 
 //profile router
-router.get("/profile", async(req, res)=>{
+router.get("/profile", withAuth, async(req, res)=>{
     try{
         res.render("profile")
 
@@ -35,7 +37,7 @@ router.get("/profile", async(req, res)=>{
 })
 
 //itinerary router
-router.get("/itinerary", async(req, res)=>{
+router.get("/itinerary", withAuth, async(req, res)=>{
     try{
         res.render("itinerary")
 
@@ -45,22 +47,25 @@ router.get("/itinerary", async(req, res)=>{
 })
 
 //budget router
-router.get("/budget", async(req, res)=>{
+router.get("/budget", withAuth, async(req, res)=>{
     try{
-        res.render("budget")
+        const expensesData = await Expense.findAll({
+            where:{
+                user_id:req.session.user_id
+            }
+        })
+        const expenses = expensesData.map((expense)=>{
+            return expense.get({plain: true })
+        })
+        console.log("expenses: ", expenses)
+        res.render("budget",{expenses} )
 
     }catch(err) {
         console.error(err)
     }
+
 })
 
-router.get("/addexpense", async(req, res)=>{
-    try{
-        res.render("addExpense")
-    }catch(err) {
-        console.error(err)
-    }
-})
 
 module.exports = router;
 

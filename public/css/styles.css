@@ -136,7 +136,21 @@ display: flex;
 flex-direction: column;
 align-items: center;
 }
+#add_expense_div {
+  display: flex;
+flex-direction: column;
+align-items: center;
 
+}
+#category_dropdown {
+
+align-items: center;
+}
+#expenses_table {
+  background-color: rgb(3, 183, 243);
+  font-size: 24px;
+  color: #000000;
+}
 /* .box {
   display: flex;
   justify-content: center;

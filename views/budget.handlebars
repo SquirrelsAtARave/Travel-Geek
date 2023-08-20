@@ -10,43 +10,53 @@
     </header>
     {{!-- <div class="box"> --}}
       <div>
-          {{!-- <h3>Starting Budget</h3>  --}}
-         <p id = "starting-budget-header" class = "starting-budget">Please, enter your starting budget here: <input id="budget_input" type = "number">
-         <button id="submit_budget">Submit</button></p>
+ 
+          <h3>Starting Budget</h3> 
+         <p id = "starting-budget-header" class = "starting-budget">Please, enter your starting budget here: 
+         </p>
          
+         <input id="budget_input" type = "number">
+         <button id="submit_budget">Submit</button>
+      </div>
+
+      <div id="add_expense_div">
+        <h5>Add Expense</h5>
+        <label for="categoroy_dropdown">Choose a category:</label>
+        <form>
+        <select id="categoroy_dropdown" name="category">
+            <option value="Hotel">Hotel</option>
+            <option value="Food">Food</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Other">Other</option>
+        </select>
+        <input id="expense_description" type="text" placeholder="description">
+        <input id="expense_amount" type="number" placeholder="cost amount">
+        </form>
+        <button id="submit_expense">Submit</button>
       </div>
       
-     <div class="box">
-        <a href="/addExpense">
-        <button>Add Expenses</button> </a>
-     </div>
-       {{!-- <a href="/remove-expenses" class="card">
-         <h5>Remove Expenses</h5>
-       </a> --}}
-    
-      </div>
+
+       {{!-- <div class="box">
+          <div class="card">
+            <h5>Add Expenses</h5>
+          </div>
+         <div class="card">
+           <h5>Remove Expenses</h5>
+         </div>
+        </div>
+    </div> --}}
    
-   <table>
+   <table id ="expenses_table">
   <tr>
-    <th>Date</th>
     <th>Category</th>
+    <th>Description</th>
     <th>Amount</th>
   </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
+  
+  {{#each expenses as |expense|}}
+  {{> expense}}
+  {{/each}}
+
 </table>
 
      {{!-- <footer>

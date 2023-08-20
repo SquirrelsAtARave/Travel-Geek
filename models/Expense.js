@@ -13,10 +13,12 @@ Expense.init(
     },
     user_id: {
       type: DataTypes.INTEGER,
+      allowNull: false,
       references: {
         model: 'user',
         key: 'id',
       },
+    },
       category: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -30,7 +32,6 @@ Expense.init(
       allowNull: false,
     },
    
-    },
   },
   {
     sequelize,

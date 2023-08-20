@@ -135,8 +135,23 @@ main {
 display: flex;
 flex-direction: column;
 align-items: center;
+margin-top: 10px;
 }
+#add_expense_div {
+  display: flex;
+flex-direction: column;
+align-items: center;
 
+}
+#category_dropdown {
+
+align-items: center;
+}
+#expenses_table {
+  background-color: rgb(3, 183, 243);
+  font-size: 24px;
+  color: #000000;
+}
 /* .box {
   display: flex;
   justify-content: center;
@@ -202,8 +217,34 @@ nav a {
 }
 /* nav a:hover {
   background-color: #e74c3c; */
+#expense_amount {
 
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 150px;
 
+}
+  #category_dropdown {
+
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 150px;
+  }
+#expense_description {
+
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 150px;
+}
 
 #budget_input {
   padding: 10px;
@@ -221,11 +262,34 @@ nav a {
   border-radius: 5px;
   color: white;
   cursor: pointer;
+  margin: 10px;
 }
 #submit_budget:hover {
   background-color: #0c3d5b;
 }
+#total_expenses_header {
+  background-color: rgb(3, 183, 243);
+  font-size: 24px;
+  text-align: center;
+  
+}
+#ending_budget_header {
+  background-color: rgb(3, 183, 243);
+  font-size: 24px;
+  text-align: center;
+}
 
+
+#submit_expense {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0c3d5b;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
 
 table {
   border-collapse: collapse;

@@ -34,17 +34,71 @@
   height: 35px;
   font-size: 14pt;
 }
-#loginForm {
 
-  font-size: 35px;
-  font-family: 'Oleo Script', cursive;
-  text-align: center;
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  text-align: center; 
 }
-#signUpForm {
 
+#loginForm, #signUpForm {
   font-size: 30px;
   font-family: 'Oleo Script', cursive;
-  text-align: center;
+  width: 45%;
+}
+
+#loginForm {
+  margin-right: auto; 
+  margin-left: 100px;
+  
+}
+
+#signUpForm {
+  margin-left: auto; /* Align the signup form to the right */
+  transform: translateY(-100%);
+
+}
+
+.textBox {
+  display: block;
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+.divider {
+  width: 2px;
+  height: 250px;
+  background-color: #f6f3f3; 
+  margin: auto;
+  margin-top: -200px;
+}
+
+#loginBtn {
+  background-color: #e24d07; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#signupBtn {
+  background-color: #e24d07; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#loginBtn:hover, #signupBtn:hover {
+  background-color: #0056b3;
 }
 
 

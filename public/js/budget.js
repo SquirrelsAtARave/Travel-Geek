@@ -56,6 +56,7 @@ const submitBudget = async () => {
 
   if (response.ok) {
     budgetHeader.textContent = `Your Starting Budget Is: $ ${budget}`;
+    document.location.reload();
     // document.location.replace('/');
   } else {
     alert(response.statusText);

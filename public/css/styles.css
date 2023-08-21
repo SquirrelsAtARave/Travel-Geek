@@ -164,7 +164,7 @@ nav button {
   top: 65%; /* Position at the vertical center */
   left: 50%; /* Position at the horizontal center */
   transform: translate(-50%, -50%); /* Adjust for center alignment */
-  color: #e24d07;
+  color:black;
   text-decoration: none;
 }
 
@@ -254,9 +254,9 @@ align-items: center;
 
 h3 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 30px;
   text-align: center;
-  color: black;
+  color:black;
 }
 
 nav a {

@@ -37,14 +37,6 @@
   font-family:Arial, Helvetica, sans-serif;
 }
 
-.form-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 100px;
-  text-align: center; 
-}
-
 #loginForm, #signUpForm {
   font-size: 30px;
   font-family: 'Oleo Script', cursive;
@@ -60,6 +52,7 @@
 #signUpForm {
   margin-left: auto; /* Align the signup form to the right */
   transform: translateY(-100%);
+  margin-top: 20px;
 
 }
 

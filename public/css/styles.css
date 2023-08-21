@@ -29,10 +29,12 @@
   height: 50px;
   font-size: 20px;
   color: #000000;
+  font-family:Arial, Helvetica, sans-serif;
 }
 .button {
   height: 35px;
   font-size: 14pt;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 #loginForm, #signUpForm {
@@ -75,6 +77,7 @@
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 16px;
+  font-family:Arial, Helvetica, sans-serif;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -86,6 +89,7 @@
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 16px;
+  font-family:Arial, Helvetica, sans-serif;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -107,7 +111,7 @@ h1 {
 h2 {
   font-size: 30px;
   color: white;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
@@ -172,7 +176,7 @@ main {
 .starting-budget {
   font-size: 25px;
   text-align: center;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   color: black;
   margin-bottom: 100px;
 
@@ -197,6 +201,7 @@ align-items: center;
 #expenses_table {
   background-color: rgb(3, 183, 243);
   font-size: 24px;
+  font-family:Arial, Helvetica, sans-serif;
   color: #000000;
 }
 /* .box {
@@ -208,7 +213,7 @@ align-items: center;
 .box button{
   display: flex;
   position: relative;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
@@ -248,6 +253,7 @@ align-items: center;
 h3 {
   margin: 0;
   font-size: 30px;
+  font-family:Arial, Helvetica, sans-serif;
   text-align: center;
   color:black;
 }
@@ -257,6 +263,7 @@ nav a {
   text-decoration: none;
   padding: 10px 20px;
   font-size: 16px;
+  font-family:Arial, Helvetica, sans-serif;
   text-align: end;
   cursor: pointer;
   position: relative;
@@ -268,6 +275,7 @@ nav a {
 
   padding: 10px;
   font-size: 16px;
+  font-family:Arial, Helvetica, sans-serif;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-right: 10px;
@@ -278,6 +286,7 @@ nav a {
 
     padding: 10px;
     font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-right: 10px;
@@ -287,6 +296,7 @@ nav a {
 
   padding: 10px;
   font-size: 16px;
+  font-family:Arial, Helvetica, sans-serif;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-right: 10px;
@@ -296,6 +306,7 @@ nav a {
 #budget_input {
   padding: 10px;
   font-size: 16px;
+  font-family:Arial, Helvetica, sans-serif;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-right: 10px;
@@ -304,6 +315,7 @@ nav a {
 #submit_budget {
   padding: 10px 20px;
   font-size: 16px;
+  font-family:Arial, Helvetica, sans-serif;
   background-color: #0c3d5b;
   border: none;
   border-radius: 5px;
@@ -317,12 +329,14 @@ nav a {
 #total_expenses_header {
   background-color: rgb(3, 183, 243);
   font-size: 24px;
+  font-family:Arial, Helvetica, sans-serif;
   text-align: center;
   
 }
 #ending_budget_header {
   background-color: rgb(3, 183, 243);
   font-size: 24px;
+  font-family:Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
@@ -330,6 +344,7 @@ nav a {
 #submit_expense {
   padding: 10px 20px;
   font-size: 16px;
+  font-family:Arial, Helvetica, sans-serif;
   background-color: #0c3d5b;
   border: none;
   border-radius: 5px;
@@ -363,8 +378,9 @@ td {
  
 
 #logout {
-  background-color: #e74c3c;
-  color: white;
+  background-color:transparent;
+  color: black;
+  font-family:Arial, Helvetica, sans-serif;
   padding: 10px 20px;
   font-size: 16px;
   border: none;
@@ -377,15 +393,12 @@ td {
   
 }
 
-#logout:hover {
-  background-color: #c0392b;
-}
-
 
 
 footer {
   background-color: #f4f4f4;
   font-size: 20px;
+  font-family:Arial, Helvetica, sans-serif;
   padding: 20px;
   text-align: center;
   position: relative; /* Position the footer relative to the parent */

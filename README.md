@@ -24,19 +24,19 @@ To run this project locally, follow these steps:
 # Screen Shot Images
 
 <figure>
-  <img src="images\Screenshot (401).png" alt="Login and New User Page" style="width:100%"> <figcaption><i>Login and New User Page</i></figcaption>
+  <img src="images\Screenshot (408).png" alt="Login and New User Page" style="width:100%"> <figcaption><i>Login and New User Page</i></figcaption>
   </figure>
 
 <figure>
-  <img src="images\Screenshot (402).png" alt="Profile Page" style="width:100%"><figcaption><i>Profile Page</i></figcaption>
+  <img src="images\Screenshot (405).png" alt="Profile Page" style="width:100%"><figcaption><i>Profile Page</i></figcaption>
 </figure> 
 
 <figure>
-  <img src="images\Screenshot (403).png" alt="Budget Tracker Page" style="width:100%"><figcaption><i>Budget Tracker Page</i></figcaption>
+  <img src="images\Screenshot (406).png" alt="Budget Tracker Page" style="width:100%"><figcaption><i>Budget Tracker Page</i></figcaption>
 </figure>
 
 <figure>
-  <img src="images\Screenshot (404).png" alt="Itinerary Page" style="width:100%"><figcaption><i>Itinerary Page</i></figcaption>
+  <img src="images\Screenshot (407).png" alt="Itinerary Page" style="width:100%"><figcaption><i>Itinerary Page</i></figcaption>
 </figure> 
 
 ## License
